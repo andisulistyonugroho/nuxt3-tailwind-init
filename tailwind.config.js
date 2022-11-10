@@ -1,15 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  mode: "jit",
-  content: [
-    "./components/**/*.{vue,js}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
-  ],
+import defaultTheme from 'tailwindcss/defaultTheme'
+export default {
   theme: {
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      colors: {
+        primary: defaultTheme.colors.green
+      }
+    }
+  }
 }
