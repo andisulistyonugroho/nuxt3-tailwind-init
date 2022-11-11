@@ -7,7 +7,10 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
-      ]
+      ],
+      bodyAttrs: {
+        class: 'antialiased font-sans bg-gray-200 overflow-hidden'
+      }
     }
   }
 })
